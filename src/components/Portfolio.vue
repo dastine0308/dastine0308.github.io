@@ -17,7 +17,7 @@
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >portfolio.</span
+          >Portfolio</span
         >
       </div>
       <hr
@@ -61,7 +61,7 @@
               :key="idx"
               :class="{ 'mt-4': idx === 0 ? true : true }"
               class="col-xl-6 col-bg-6 col-md-12 col-sm-12"
-              style="position: relative;"
+              style="position: relative"
             >
               <vueper-slides
                 :dragging-distance="50"
@@ -69,8 +69,7 @@
                 :bullets="false"
                 slide-content-outside="bottom"
                 style="position: aboslute"
-                  @click.prevent="showDesignModalFn(design)"
-
+                @click.prevent="showDesignModalFn(design)"
               >
                 <vueper-slide
                   v-for="(slide, i) in design.pictures"
@@ -79,11 +78,17 @@
                 />
               </vueper-slides>
               <div
-                style="width: 100%; display: flex; justify-content: space-between"
+                style="
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                "
                 class="mt-2"
               >
                 <div>
-                  <div class="title2" style="font-weight: 500;">{{ design.title }}</div>
+                  <div class="title2" style="font-weight: 500">
+                    {{ design.name }}
+                  </div>
                   <span
                     class="badge mr-2 mb-2"
                     v-for="tech in design.technologies"
@@ -92,11 +97,11 @@
                     >{{ tech }}</span
                   >
                   •
-                  <span class="date ml-1">{{design.date}}</span>
+                  <span class="date ml-1">{{ design.date }}</span>
                 </div>
 
                 <button
-                  style="height: 31px; margin-top: 5px;"
+                  style="height: 31px; margin-top: 5px"
                   class="btn-sm btn btn-outline-secondary no-outline"
                   @click.prevent="showDesignModalFn(design)"
                 >
@@ -291,7 +296,7 @@ export default {
   color: white;
 }
 
-/deep/ .vue-tabs .nav-tabs {
+.tab >>> .vue-tabs .nav-tabs {
   border: none;
   font-size: 20px;
   font-weight: 500;
@@ -300,11 +305,11 @@ export default {
   justify-content: center;
 }
 
-/deep/ .vue-tabs .tabs__link {
+.tab >>> .vue-tabs .tabs__link {
   color: #a0a0a0;
 }
 
-/deep/ .vue-tabs .nav-tabs > li.active > a {
+.tab >>> .vue-tabs .nav-tabs > li.active > a {
   background: transparent;
   border: none;
   transition: all 0.5s;
@@ -314,19 +319,19 @@ export default {
   margin-left: 15px;
 }
 
-/deep/ .vue-tabs .nav-tabs > li > a:hover {
+.tab >>> .vue-tabs .nav-tabs > li > a:hover {
   background: transparent;
   color: #cbcbcb;
   transition: all 0.5s;
 }
 
-/deep/ .vue-tabs .nav-tabs > li > a {
+.tab >>> .vue-tabs .nav-tabs > li > a {
   background: transparent;
   border: none;
   transition: all 0.5s;
 }
 
-/deep/ .vue-tabs .nav-tabs > li > a:after {
+.tab >>> .vue-tabs .nav-tabs > li > a:after {
   content: "";
   width: 20%;
   position: absolute;
@@ -336,7 +341,7 @@ export default {
   transition: all 0.5s;
 }
 
-/deep/ .vue-tabs .nav-tabs > li.active > a:after {
+.tab >>> .vue-tabs .nav-tabs > li.active > a:after {
   width: 100%;
   transition: all 0.5s;
 }
@@ -374,10 +379,10 @@ export default {
   opacity: 1;
 }
 
-/deep/.vueperslide {
+.tab >>>.vueperslide {
   border-radius: 10px !important;
 }
-/deep/.vueperslides__parallax-wrapper {
+.tab >>>.vueperslides__parallax-wrapper {
   border-radius: 10px !important;
 }
 
@@ -397,7 +402,7 @@ export default {
   border-color: #669db3ff;
   color: white;
 }
-/deep/ .vueperslides__arrow {
+.tab >>> .vueperslides__arrow {
   outline: none !important;
   border: none;
   color: grey;
@@ -417,6 +422,6 @@ export default {
 .date {
   font-size: 14px;
   font-weight: 400;
-  opacity: 0.75
+  opacity: 0.75;
 }
 </style>

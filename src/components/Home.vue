@@ -17,14 +17,14 @@
           <span
             class="home-title"
             :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >hello there!</span
+            >Hi, I'm Tai</span
           >
           <div>
             <p v-html="description"></p>
           </div>
           <div class="text-center pb-4">
             <button
-              class="btn btn-outline-secondary mx-2 "
+              class="btn btn-outline-secondary mx-2"
               @click="open('linkedin')"
               v-tooltip.bottom="'LinkedIn'"
             >
@@ -39,10 +39,10 @@
             </button>
             <button
               class="btn btn-outline-secondary mx-2"
-              @click="open('angellist')"
-              v-tooltip.bottom="'AngelList'"
+              @click="open('issue')"
+              v-tooltip.bottom="'Issue'"
             >
-              <i class="fab fa-angellist"></i>
+              <i class="fas fa-book"></i>
             </button>
             <button
               class="btn btn-outline-secondary mx-2"
@@ -80,8 +80,8 @@ export default {
       name: info.name,
       linkedin: info.links.linkedin,
       github: info.links.github,
-      angellist: info.links.angellist,
-      resume: info.links.resume
+      issue: info.links.issue,
+      resume: info.links.resume,
     };
   },
   methods: {
@@ -93,8 +93,8 @@ export default {
         case "github":
           window.open(this.github, "_blank");
           break;
-        case "angellist":
-          window.open(this.angellist, "_blank");
+        case "issue":
+          window.open(this.issue, "_blank");
           break;
         case "resume":
           window.open(this.resume, "_blank");
@@ -113,8 +113,8 @@ export default {
 
 img {
   max-width: 300px;
-  margin-top: 60px;
-  transform: rotateY(180deg);
+  /* margin-top: 60px; */
+  /* transform: rotateY(180deg); */
 }
 
 @media only screen and (max-width: 580px) {

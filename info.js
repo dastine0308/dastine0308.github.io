@@ -1,6 +1,6 @@
 let info = {
-  name: "Hrishikesh Paul",
-  logo_name: "paul",
+  name: "戴詩庭",
+  logo_name: "Dastine",
   flat_picture: require("./src/assets/potrait.jpg"),
   config: {
     use_cookies: true,
@@ -9,361 +9,208 @@ let info = {
     }
   },
   description:
-    "A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ",
+    "<br>能接受失敗，從中學習並調整<br><br>我個性活潑開朗，主動積極，對於事物保有好奇心，高中加入大眾傳播社，接觸攝影，從中培養我對視覺的敏感度，用影像的細膩與真實作為溝通的媒介，每次構圖前養成觀察「人」的習慣，使我更能同理鏡中人物的情緒與情境，用畫面傳達當下的感動。大學就讀資訊傳播學系，接觸前衛的電子媒介，像是3D建模、動畫、網頁前端、後端程式..等，使我能與不同領域的人溝通與合作，因著學習力與適應力強，對事情和觀點都保有彈性。 ",
+  // "A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ",
   links: {
-    linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
-    github: "https://github.com/hrishikeshpaul",
-    angellist: "https://angel.co/u/hrishikesh-paul",
+    linkedin: "https://www.linkedin.com/in/dastine/",
+    github: "https://github.com/dastine0308?tab=repositories",
+    issue: "https://issuu.com/christine52jesus/docs/dastine_porfolio_3",
     resume:
-      "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
+      "#"
+    // "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
   },
   education: [
     {
-      name: "Indiana University Bloomington",
-      place: "USA",
-      date: "Aug, 2019 - May, 2021",
-      degree: "Masters in Computer Science",
-      gpa: "3.7/4.0",
-      description:
-        "Currently pursuing my Master's in Computer Science, while specializing in the field of Artificial Intelligence and Machine Learning.",
+      name: "元智大學",
+      place: "桃園市 中壢區",
+      date: "2017/9 - 2021/6",
+      degree: "學士, 資訊傳播學系",
+      // gpa: "3.7/4.0",
+      description: " ",
+      // "Currently pursuing my Master's in Computer Science, while specializing in the field of Artificial Intelligence and Machine Learning.",
       skills: [
-        "Artificial Intelligence",
-        "Software Engineering",
-        "Algorithms",
-        "Computer Vision",
-        "Music Data Mining",
-        ,
-        "OS"
-      ]
-    },
-    {
-      name: "Manipal Institute of Technology",
-      place: "India",
-      date: "Aug, 2015 - July, 2019",
-      degree: "Bachelors in Computer and Communication",
-      gpa: "8.0/10.0",
-      description:
-        "Graduated from Manipal Institute of Technology, Manipal with a bachelors degree in Computer and Communications Engineering.",
-      skills: [
-        "AI",
-        "Neural Netwroks",
-        "Data Mining",
-        "Computer Vision",
-        "Pattern Recognition",
-        "HCI",
-        "Software Engineering"
+        "UI/UX",
+        "Human-Computer Interaction",
+        "Programming",
+        "Video Production",
+        "3D Modeling"
       ]
     }
   ],
   experience: [
     {
-      name: "Cyberinfrastructure for Network Science Center",
-      place: "Bloomington, Indiana",
-      date: "Jun, 2020 - Present",
-      position: "Research Assistant; Full Stack Developer",
-      description:
-        "Worked as a Software Developer for the Human BioMolecular Atlas Program (funded by the NIH), building innovative visualization tools to envision large biomedical datasets.",
-      skills: ["Angular", "Node.js", "Vega", "Shell", "Typescript"]
+      name: "富邦人壽股份有限公司",
+      place: "台北市 內湖區",
+      date: "2020/7 - 目前",
+      position: "前端工程師實習生",
+      description: "負責專案前端開發，與後端串接API、協助專案除錯及修正",
+      // "Worked as a Software Developer for the Human BioMolecular Atlas Program (funded by the NIH), building innovative visualization tools to envision large biomedical datasets.",
+      skills: ["HTML", "SASS(CSS)", "JQuery", "JavaScript(ES6)", "VueJS", "Git", "AJAX Api", "Typescript"]
     },
     {
-      name: "Skylark Drones",
-      place: "Bangalore, India",
-      date: "Jan, 2019 - Jun, 2021",
-      position: "Full Stack Web Developer",
+      name: "元智大學資訊傳播學系實驗室 ",
+      place: "桃園市 中壢區",
+      date: "2018/9 - 2019/6",
+      position: "計畫研究助理",
       description:
-        "Worked as a full stack web developer, implementing various features and fixing bugs for Skylark Drones’ central management system called Operations Portal and Data Mining Server.",
-      skills: ["MongoDB", "Flask", "VueJS", "NGINX"]
+        "研究 MogoDB 資料庫及 Laravel 系統安裝測試、撰寫結案報告書、負責實驗室行政工作。",
+      skills: ["HTML5", "CSS", "Git", "MongoDB", "PHP"]
     },
     {
-      name: "Hridayam Soft Solutions",
-      place: "Mumbai, India",
-      date: "May, 2018 - Jun, 2018",
-      position: "Computer Vision Engineer",
-      description:
-        "Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.",
-      skills: ["Python", "OpenCV", "PyTesseract", "AngularJS", "NodeJS"]
+      name: "MasterCorp",
+      place: "Massachuset, USA",
+      date: "2019/6 - 2019/9",
+      position: "Housekeeping (J1 Work and Travel students)",
+      description: "Employers of J1 Work and Travel students.Having the initiative to organise working and travel in a foreign country.  Responsible for maintaining cleanliness and appearance of guest units following MasterCorp’s standard   cleaning process. Got promted by hard-working to supervise other housekeepers.",
+      // "Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.",
+      // skills: [""]
     },
     {
-      name: "Elementail Labs",
-      place: "Mumbai, India",
-      date: "May, 2017 - July, 2017",
-      position: "Full Stack Web Developer",
-      description:
-        "Implemented various contracts and deployed them on the upcoming blockchain technology - Ethereum, while also working as a MEAN stack web developer for Elemential Labs’ website.",
-      skills: ["MongoDB", "AngularJS", "NodeJS", "ExpressJS"]
+      name: "昱強補習班-愛美語元生分校",
+      place: "桃園市 中壢區",
+      date: "2018/9 - 2019/5",
+      position: "國中數理輔導老師(兼職)",
+      description: "個別輔導學生數理相關問題、配合補習班教材講解題目、掌握班上學生學習狀況。",
+      // "Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.",
+      skills: ["數學", "理化"]
     },
-    {
-      name: "Viteos Capital Market Services s",
-      place: "Mumbai, India",
-      date: "May, 2016 - July, 2016",
-      position: "Software Developer",
-      description:
-        "Evaluated technologies, and building proof of concept/prototype solutions for trade processing and mathematical model based evaluations, while working in the software development team.",
-      skills: ["C#", "C++", "Visual Studio"]
-    }
+
   ],
   skills: [
     {
       title: "languages",
       info: [
-        "Python",
         "Javascript",
         "TypeScript",
-        "Java",
-        "C",
+        "PHP",
         "C++",
-        "SQL",
-        "NoSQL",
-        "Ruby"
+        "C#",
+        "Java",
       ],
       icon: "fa fa-code"
     },
     {
-      title: "data frameworks",
-      info: [
-        "Keras",
-        "Numpy",
-        "Pandas",
-        "OpenCV",
-        "SciPy",
-        "Sklearn",
-        "LibROSA",
-        "Pillow"
-      ],
-      icon: "fa fa-cubes"
-    },
-    {
       title: "web technologies",
-      info: ["Vue", "Angular", "React", "Node", "Flask", "HTML", "CSS"],
+      info: ["VueJs", "HTML", "SCSS(CSS)"],
       icon: "fas fa-laptop-code"
     },
     {
-      title: "databases",
-      info: ["MongoDB", "MySQL", "OracleSQL", "Neo4j"],
-      icon: "fa fa-database"
-    },
-    {
-      title: "operating systems & tools",
-      info: [
-        "MacOS",
-        "Ubuntu",
-        "Windows",
-        "Android",
-        "Agile",
-        "Scrum",
-        "JIRA",
-        "Heroku",
-        "Firebase",
-        "AWS S3"
-      ],
-      icon: "fas fa-tools"
-    },
-    {
       title: "design",
-      info: ["Illustrator", "XD", "Photoshop", "Final Cut Pro"],
+      info: ["Illustrator", "Photoshop", "XD", "Premiere", "Maya"],
       icon: "fa fa-pencil-square-o"
     }
   ],
   portfolio: [
     {
-      name: "Sheet Recognizer",
+      name: "元智大學資訊傳播學系畢業展覽 - 此刻變態",
       pictures: [
         {
-          img: require("./src/assets/portfolio/msr/one.png")
+          img: require("./src/assets/portfolio/gew/devices2.jpg")
         },
         {
-          img: require("./src/assets/portfolio/msr/two.png")
+          img: require("./src/assets/portfolio/gew/site-map.png")
         },
-        {
-          img: require("./src/assets/portfolio/msr/three.png")
-        },
-        {
-          img: require("./src/assets/portfolio/msr/four.png")
-        }
       ],
-      technologies: ["Computer Vision", "OpenCV", "AI", "Flask", "Sockets"],
-      category: "Algorithm",
-      date: "Jan, 2020 - Mar, 2020",
+      technologies: ["SCSS", "JavaScript", "VueJs"],
+      category: "Front-end development",
+      date: "2021/4 - 2021/6",
+      client: "元智大學資訊傳播學系 畢業策展團隊",
+      role: "前端開發者",
+      team: "4 位成員",
       github:
-        "https://github.com/hrishikeshpaul/music-sheet-recognizer-backend",
-      visit: "https://github.com/hrishikeshpaul/music-sheet-recognizer-backend",
+        "https://github.com/dastine0308/yzuic-exhibition-web",
+      visit: "http://befrenetic.infocom.yzu.edu.tw/?fbclid=IwAR3YWtO2ckQ1nkFbfjpJ5zZwf66AqIMDt9bKcXx2erc2uGk_nR2q_Zqecbs#/",
       description:
-        "Music Sheet Recognizer (MSR) highlights basic Image Processing and Recognition. Like Optical Character Recognition, this tool is used to detect music notes and rests. It makes use of basic Computer Vision techniques such as Convolution, Edge Detections, Hough Transforms and Template Matching to detect notes and rests on a music sheet. "
+        ""
     },
     {
-      name: "NoQ Job Portal",
+      name: "期許測試工具 微軟產品反應卡",
       pictures: [
         {
-          img: require("./src/assets/portfolio/noq/logo.png")
+          img: require("./src/assets/portfolio/mrc/mrc1.jpg")
         },
-        {
-          img: require("./src/assets/portfolio/noq/one.png")
-        },
-        {
-          img: require("./src/assets/portfolio/noq/two.png")
-        },
-        {
-          img: require("./src/assets/portfolio/noq/three.png")
-        },
-        {
-          img: require("./src/assets/portfolio/noq/four.png")
-        }
+        //       {
+        //         img: require("./src/assets/portfolio/mrc/mrc.jpg")
+        //       },
       ],
-      technologies: ["Node", "Vue", "Express", "MongoDB", "Heroku"],
-      category: "Website",
-      date: "Sep, 2019 - Dec  , 2019",
-      github: "https://github.com/hrishikeshpaul/noq",
-      visit: "https://noq-client.herokuapp.com/",
+      technologies: ["SCSS", "jQuery", "JavaScript", "VueJs"],
+      category: "Front-end development",
+      date: "2020/10 - 2020/12",
+      client: "用戶體驗研究團隊",
+      role: "前端開發者",
+      team: "3 位成員",
+      github:
+        "https://github.com/dastine0308/uxtools_reactionCards",
+      visit: "https://dastine0308.github.io/uxtools_reactionCards/",
+
       description:
-        "No Q, is a revolutionary tool which allows for both employers and students to skip the hassle seen in modern day career fairs. For the students, there is an intuitive profile builder where you can add things like education, skills, certifications, honors, and experiences. No Q is not only good for students, but employers as well! A common problem at modern career fairs is the number of unqualified candidates who waste their time when they could be chatting with someone else. With No Q, only the students who meet the positions’ criteria will be able to apply, and from there the recruiter can invite them to talk in more detail at the career fair through our intuitive messaging system."
+        "與UI設計師合作，開發網頁版，便於受試者在行動裝置上進行，解決原先紙本索引卡的費工與不便利性。<br>微軟產品反應卡是由微軟公司研發用來做「合宜性」測試的工具，可以引導使用者表達並解釋他們對某設計的感覺，適合在產品的原型階段使用，作為未來改版的基準。"
+
     },
     {
-      name: "POST",
+      name: "Open Query 智能探索平台 🔒",
       pictures: [
         {
-          img: require("./src/assets/portfolio/post/one.png")
+          img: require("./src/assets/portfolio/opq/ui.jpg")
         },
         {
-          img: require("./src/assets/portfolio/post/two.png")
-        }
+          img: require("./src/assets/portfolio/opq/site-map.png")
+        },
       ],
-      technologies: [
-        "Markov Models",
-        "Python",
-        "Artificial Intelligence",
-        "Vue",
-        "Heroku"
-      ],
-      category: "Algorithm",
-      github: "https://github.com/hrishikeshpaul/pos-tagger",
-      date: "Oct, 2019 - Nov, 2019",
-      visit: "https://post-client.herokuapp.com/",
+      technologies: ["jQuery", "SCSS/CSS", "JavaSript"],
+      category: "Front-end development",
+      date: "2020/8 - 目前",
+      client: "",
+      role: "前端開發者",
+      team: "6 位成員",
+      github:
+        "https://github.com/dastine0308/yzuic-exhibition-web",
+      visit: "http://befrenetic.infocom.yzu.edu.tw/?fbclid=IwAR3YWtO2ckQ1nkFbfjpJ5zZwf66AqIMDt9bKcXx2erc2uGk_nR2q_Zqecbs#/",
       description:
-        "Post is a simple algorithm that was developed to tagging a word corresponding to its part of speech. The algorithm makes of a probabilisitic approach along with some randomness, together which forms the basis of an algorithm called Gibbs Sampling."
+        ""
     },
     {
-      name: "Suicide Analyzer",
+      name: "AML 審查作業平台 🔒",
       pictures: [
         {
-          img: require("./src/assets/portfolio/suicide/suicide-analyzer.png")
+          img: require("./src/assets/portfolio/opq/ui.jpg")
         },
         {
-          img: require("./src/assets/portfolio/suicide/suicide2-original.png")
-        }
+          img: require("./src/assets/portfolio/opq/site-map.png")
+        },
       ],
-      technologies: ["Node", "Angular", "Express", "Leaflet", "Pandas"],
-      category: "Website",
-      date: "Oct, 2018 - Nov, 2018",
-      github: "https://github.com/hrishikeshpaul/whodata",
-      visit: "https://skylarktiral.herokuapp.com/",
+      technologies: ["JavaSript", "TypeScript", "VueJs"],
+      category: "Front-end development",
+      date: "2021/3 - 目前",
+      client: "保單行政處",
+      role: "前端開發者",
+      team: "6 位成員",
+      github:
+        "",
+      visit: "",
       description:
-        "This is a web application, uses a map to demonstrate the number suicides committed around the globe, according to a dataset provided by the WHO. The application consists of a Leaflet map that colors every nation, based on the number of suicides that have been committed in that country, for that year. It provides us with the capability to select the data as well as the continent."
+        "以 Ant design Vue 為風格設計規範。<br>建置各系統共用之AML審查作業平台，進行交易件/Renew件/疑似洗錢或資恐交易態樣案件之AML審查作業，並留下審查紀錄，及將審查文件歸入FMS系統。"
     },
-    {
-      name: "Sentiment Analyzer",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/smit/one.png")
-        },
-        {
-          img: require("./src/assets/portfolio/smit/two.png")
-        },
-        {
-          img: require("./src/assets/portfolio/smit/three.png")
-        },
-        {
-          img: require("./src/assets/portfolio/smit/four.png")
-        }
-      ],
-      technologies: ["LSTM", "Keras", "Angular", "Tweepy", "Heroku", "Python"],
-      category: "Alogrithm",
-      date: "Feb, 2018 - Apr  , 2018",
-      github: "https://github.com/hrishikeshpaul/sih",
-      visit: "https://angel.co/projects/1009777-sentiment-analysis",
-      description:
-        "Developing this for the final round of Smart India Hackathon 2018, the web application is a platform for showcasing the sentiment of the tweets of the people in the Telangana region in India on policy satisfaction, services and problem definitions. The minimal UI design consists of different bins, that have their respective tweets, all scraped from twitter. There is also a simple graphical representation denoting the sentiment of the tweets."
-    },
-    {
-      name: "Clumpr",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/clumpr/logo.png")
-        },
-        {
-          img: require("./src/assets/portfolio/clumpr/one.png")
-        },
-        {
-          img: require("./src/assets/portfolio/clumpr/two.png")
-        }
-      ],
-      technologies: ["Node", "Angular", "Express", "MySQL", "Facebook API"],
-      category: "Web App",
-      github: "https://github.com/hrishikeshpaul/clumpr",
-      date: "Sep, 2017 - Nov, 2017",
-      visit: "https://github.com/hrishikeshpaul/clumpr",
-      description:
-        'Clumpr is an online social event planning assistant that - using information about similar events happening in similar locations around the same time, friends who frequently attend the same events, and mutual friends - helps users to collaborate, combine, and attend events together, effectively "clumping" people and activities in a way that makes intuitive sense.'
-    },
-    {
-      name: "Nutricare",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/nc/one.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/two.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/three.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/four.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/five.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/six.png")
-        }
-      ],
-      technologies: ["Node", "Angular", "Express", "MongDB", "Medical"],
-      category: "Website",
-      github: "https://github.com/hrishikeshpaul/clumpr",
-      date: "May, 2017 - Aug, 2017",
-      visit: "https://angel.co/projects/576300-nutricare",
-      description:
-        "Nutricare is a basic health website for users(patients) to input nutrient intake data and researchers to analyse the data with the help of graphs and tables. A researcher can conduct studies on N different subjects (patient) for a particular problem statement. Typically, a researcher will enter food item consumed by subjects over a period of time (Ex - 24hrs, or 1 week, or 1 month etc)."
-    }
   ],
   portfolio_design: [
     {
-      name: "Guituna",
-      title: "Guituna - Mockup Design",
+      name: "Uber eats 外送員專用APP",
       pictures: [
         {
-          img: require("./src/assets/designs/coursera1/MoodBoard.png"),
-          title: "MoodBoard"
+          img: require("./src/assets/portfolio/uea/devices.jpg")
         },
-        {
-          img: require("./src/assets/designs/coursera1/Mockups 1.png"),
-          title: "Mockups 1"
-        },
-        {
-          img: require("./src/assets/designs/coursera1/Mockups 2.png"),
-          title: "Mockups 2"
-        },
-        {
-          img: require("./src/assets/designs/coursera1/App Elements.png"),
-          title: "App Elements"
-        }
       ],
-      technologies: ["XD", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "May, 2020 - Jun, 2020",
-      visit: "",
+      technologies: ["Adobe XD"],
+      category: "UI/UX Case Study",
+      date: "2020/3 - 2020/6",
+      client: "Uber eats 外送員",
+      role: "用戶體驗研究員",
+      team: "5 位成員",
+      github:
+        "https://github.com/dastine0308/yzuic-exhibition-web",
+      visit: "http://befrenetic.infocom.yzu.edu.tw/?fbclid=IwAR3YWtO2ckQ1nkFbfjpJ5zZwf66AqIMDt9bKcXx2erc2uGk_nR2q_Zqecbs#/",
       description:
-        "Guituna is a simple, lightweight and intuitive guitar tuner, that provides different modes of guitars based on your usage. You can either select a specific string to tune, or free tune your guitar based on the frequency shown on the meter. Guituna also provides a handful of different tunings to help explore various tuning paradigms. There is also an array of settings that can be configured to your liking based on the devices you're using. <br/><br/>The interface aims to highlight the use of a minimal design and providing just enough controls to make for a great tuner, while exposing various possibilities of guitarists to explore."
+        ""
     },
     {
       name: "Pantree",
@@ -428,40 +275,40 @@ let info = {
         "Bunder is an intuitive web platform for micro-communities to share sensitive data with privacy within the community and allow engagement amongst them. Our aim is two-fold - Co-existing and Collaboration. The former is executed by providing a platform for communities that are geographically positioned in the same proximity (Housing societies, Dorms, Apartment Complexes) to have and share data (exact apartment addresses, phone number, apartment housing rules, individuals tested positive for COVID-19) in an exclusive platform. The latter is to give these people in the community the ability to carry out a task you are physically or remotely unable to do; with dignity and ease."
     }
   ],
-  recommendations: [
+  honor: [
     {
-      title:
-        "In his internship, Hrishikesh has demonstrated excellent learning ability, and with a dedicated, task oriented approach, he was able to complete his assignment ahead of time.",
-      author: "Ushanas Shastri",
-      position: "CTO",
-      company: "Viteos Capital Market Services",
-      location: "Mumbai"
+      title: "跨領域類 跨領域組 銅獎",
+      description: "",
+      organizer: "放視大賞(Vision Get Wild, VGW)",
+      date: "2021/5",
+      location: "高雄市",
     },
     {
-      title:
-        "I feel his budding leadership abilities will become even more effective in a diverse and challenging environment.",
-      author: "Anil Dukkipatty",
-      position: "CTO",
-      company: "Elemential Labs",
-      location: "Mumbai"
+      title: "創意APP實作競賽活動 人氣獎",
+      description: "",
+      organizer: "元智大學",
+      date: "2019/5",
+      location: "桃園市",
     },
     {
-      title:
-        "He has gained great knowledge and experience of SDE, and has learned ot develop the application keeping in mind the client's perpective and also making it creative.",
-      author: "Chintan Shah",
-      position: "Director",
-      company: "Hridayam Soft Solution",
-      location: "Mumbai"
-    },
-    {
-      title:
-        "During the course of his employment we have found him to be a self-started who was motivated, duty bound and a highly commited team player.",
-      author: "Mrinal Pai",
-      position: "Co-Founder & Director",
-      company: "Skylark Drones",
-      location: "Bangalore"
+      title: "有庠獎學金",
+      description: "",
+      organizer: "元智大學",
+      date: "2018/5",
+      location: "桃園市",
     }
-  ]
+
+  ],
+  // recommendations: [
+  //   {
+  //     title:
+  //       "In his internship, Hrishikesh has demonstrated excellent learning ability, and with a dedicated, task oriented approach, he was able to complete his assignment ahead of time.",
+  //     author: "Ushanas Shastri",
+  //     position: "CTO",
+  //     company: "Viteos Capital Market Services",
+  //     location: "Mumbai"
+  //   },
+  // ]
 };
 
 export default info;

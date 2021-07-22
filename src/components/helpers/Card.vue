@@ -8,7 +8,7 @@
         'bg-dark3': nightMode,
       }"
     >
-      <div style="height: 180px;">
+      <div style="height: 180px">
         <img
           class="card-img-top"
           :src="portfolio.pictures[0].img"
@@ -17,10 +17,11 @@
       </div>
       <div class="card-body pborder-top">
         <h5 class="title2">{{ portfolio.name }}</h5>
+        <div class="title3">{{ portfolio.category }}</div>
         <div>
           <div class="pb-1 bheight">
             <span
-              class="badge mr-2 mb-2 "
+              class="badge mr-2 mb-2"
               v-for="tech in portfolio.technologies"
               :key="tech"
               :class="{ 'bg-dark4': nightMode }"
@@ -31,11 +32,10 @@
             class="title3 m-0 pb-2 pheight pt-1"
             v-html="
               portfolio.description.length > 100
-                ? portfolio.description.substring(0, 105) + '...'
+                ? portfolio.description.substring(0, 50) + '...'
                 : portfolio.description
             "
-          >
-          </p>
+          ></p>
         </div>
         <div class="text-center mt-2">
           <button
@@ -106,7 +106,7 @@ img {
 }
 
 .pheight {
-  height: 110px;
+  height: 85px;
   max-height: 130px;
   overflow: auto;
   text-align: justify;

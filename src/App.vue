@@ -6,8 +6,9 @@
       <About id="about" :nightMode="nightMode" />
       <Skills id="skills" :nightMode="nightMode" />
       <Portfolio id="portfolio" :nightMode="nightMode" />
-      <Recommendation :nightMode="nightMode" />
-      <Contact id="contact" :nightMode="nightMode" />
+      <!-- <Recommendation :nightMode="nightMode" /> -->
+      <Honor :nightMode="nightMode" />
+      <ContactMe id="contact" :nightMode="nightMode" />
       <Footer :nightMode="nightMode" />
     </div>
   </div>
@@ -19,8 +20,9 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
-import Recommendation from "./components/Recommendation";
-import Contact from "./components/Contact";
+// import Recommendation from "./components/Recommendation";
+import Honor from "./components/Honor.vue";
+import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 
 import info from "../info";
@@ -33,8 +35,9 @@ export default {
     About,
     Skills,
     Portfolio,
-    Recommendation,
-    Contact,
+    // Recommendation,
+    Honor,
+    ContactMe,
     Footer,
   },
   data() {

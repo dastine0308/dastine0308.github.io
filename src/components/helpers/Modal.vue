@@ -21,7 +21,7 @@
             >
             <a
               class="pull-right"
-              style="font-size: 18px;"
+              style="font-size: 18px"
               @click="$emit('close')"
               ><i class="fas fa-times"></i
             ></a>
@@ -35,8 +35,29 @@
               class="mb-2 date"
               :class="{ 'text-light': nightMode, pbgray: nightMode }"
             >
-              <span>{{ portfolio.date }} • {{ portfolio.category }}</span>
+              <div style="text-align: justify">
+                <span v-html="portfolio.description"></span>
+              </div>
+              <br>
+              <div class="mb-2">
+                <div class="title2">TIMELINE</div>
+                <div>{{ portfolio.date }}</div>
+              </div>
+              <div class="mb-2">
+                <div class="title2">CLIENT</div>
+                <div>{{ portfolio.client }}</div>
+              </div>
+              <div class="mb-2">
+                <div class="title2">ROLE</div>
+                <div>{{ portfolio.role }}</div>
+              </div>
+              <div class="mb-2">
+                <div class="title2">TEAM</div>
+                <div>{{ portfolio.team }}</div>
+              </div>
+              <!-- <div>{{ portfolio.date }} • {{ portfolio.category }}</div> -->
             </div>
+
             <div class="pb-1 bheight">
               <span
                 class="badge mr-2 mb-2"
@@ -47,9 +68,6 @@
               >
             </div>
 
-            <div style="text-align: justify;">
-              <span v-html="portfolio.description"></span>
-            </div>
             <hr />
             <div>
               <Gallery :images="portfolio.pictures" />
@@ -147,8 +165,8 @@ a:hover {
 }
 
 .modal-container {
-  width: 40%;
-  max-height: 70%;
+  width: 80%;
+  max-height: 80%;
   margin: 0px auto;
   border-radius: 7px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);

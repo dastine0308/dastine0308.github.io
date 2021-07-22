@@ -16,7 +16,7 @@
             }}</span>
             <a
               class="pull-right"
-              style="font-size: 18px;"
+              style="font-size: 18px"
               @click="$emit('close')"
               ><i class="fas fa-times"></i
             ></a>
@@ -29,8 +29,27 @@
             <div
               class="mb-2 date"
               :class="{ 'text-light': nightMode, pbgray: nightMode }"
-            >
-              <span>{{ portfolio.date }} • {{ portfolio.category }}</span>
+            ></div>
+
+            <div style="text-align: justify">
+              <span v-html="portfolio.description"></span>
+            </div>
+            <br />
+            <div class="mb-2">
+              <div class="title2">TIMELINE</div>
+              <div>{{ portfolio.date }}</div>
+            </div>
+            <div class="mb-2">
+              <div class="title2">CLIENT</div>
+              <div>{{ portfolio.client }}</div>
+            </div>
+            <div class="mb-2">
+              <div class="title2">ROLE</div>
+              <div>{{ portfolio.role }}</div>
+            </div>
+            <div class="mb-2">
+              <div class="title2">TEAM</div>
+              <div>{{ portfolio.team }}</div>
             </div>
             <div class="pb-1 bheight">
               <span
@@ -40,10 +59,6 @@
                 :class="{ 'bg-dark4': nightMode }"
                 >{{ tech }}</span
               >
-            </div>
-
-            <div style="text-align: justify;">
-              <span v-html="portfolio.description"></span>
             </div>
             <hr />
             <div>
