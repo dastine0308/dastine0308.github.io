@@ -1,9 +1,13 @@
+const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV);
+
 module.exports = {
     chainWebpack: config => {
         config.module.rules.delete('eslint');
     },
 
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/eric-project/'
+    outputDir: `dist/${process.env.NODE_ENV}`,
+
+    publicPath: IS_PROD
+        ? '/portfolio-web/'
         : '/'
 }

@@ -167,7 +167,29 @@ let info = {
         "https://github.com/dastine0308/yzuic-exhibition-web",
       visit: "http://befrenetic.infocom.yzu.edu.tw/?fbclid=IwAR3YWtO2ckQ1nkFbfjpJ5zZwf66AqIMDt9bKcXx2erc2uGk_nR2q_Zqecbs#/",
       description:
-        ""
+        "進行後台 UI 切版與功能串接，主要使用 Vue 搭配Ant design Vue 工具進行主要開發。"
+    },
+    {
+      name: "保單資料函覆系統 🔒",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/prs/site-map.png")
+        },
+        {
+          img: require("./src/assets/portfolio/prs/site-map.png")
+        },
+      ],
+      technologies: ["JavaSript", "TypeScript", "VueJs"],
+      category: "Front-end development",
+      date: "2021/3 - 目前", 
+      client: "保單行政處",
+      role: "前端開發者",
+      team: "10 位成員",
+      github:
+        "",
+      visit: "",
+      description:
+        "進行後台 UI 切版與功能串接，主要使用 Vue 搭配Ant design Vue 工具進行主要開發。<br>建置各系統共用之AML審查作業平台，進行交易件/Renew件/疑似洗錢或資恐交易態樣案件之AML審查作業，並留下審查紀錄，及將審查文件歸入FMS系統。"
     },
     {
       name: "AML 審查作業平台 🔒",
@@ -181,15 +203,15 @@ let info = {
       ],
       technologies: ["JavaSript", "TypeScript", "VueJs"],
       category: "Front-end development",
-      date: "2021/3 - 目前",
+      date: "2021/6 - 目前",
       client: "保單行政處",
-      role: "前端開發者",
-      team: "6 位成員",
+      role: "前端開發者(協助)",
+      team: "10 位成員",
       github:
         "",
       visit: "",
       description:
-        "以 Ant design Vue 為風格設計規範。<br>建置各系統共用之AML審查作業平台，進行交易件/Renew件/疑似洗錢或資恐交易態樣案件之AML審查作業，並留下審查紀錄，及將審查文件歸入FMS系統。"
+        "進行後台 UI 切版與功能串接，主要使用 Vue 搭配Ant design Vue 工具進行主要開發。<br>建置各系統共用之AML審查作業平台，進行交易件/Renew件/疑似洗錢或資恐交易態樣案件之AML審查作業，並留下審查紀錄，及將審查文件歸入FMS系統。"
     },
   ],
   portfolio_design: [
@@ -212,68 +234,6 @@ let info = {
       description:
         ""
     },
-    {
-      name: "Pantree",
-      title: "Pantree - Mockup Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/pantree/MoodBoard.png"),
-          title: "Moodboard"
-        },
-        {
-          img: require("./src/assets/designs/pantree/1.png"),
-          title: "Mockups 1"
-        },
-        {
-          img: require("./src/assets/designs/pantree/2.png"),
-          title: "Mockups 2"
-        }
-      ],
-      technologies: ["XD", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "May, 2020 - July, 2020",
-      visit: "",
-      description:
-        "Pantree is a recipiece finding and recommending application. It is often the case that you have run to your closest grocery store just to pick up one item that is missing in your kitchen. Pantree keeps a track of all your ingredients, and suggests recipes based on your meal preferences and past recipes. <br/><br/> The goal of the interface is to keep it similar to various recipe/food apps to reduce the learning required by the user, but also provide a smooth interface for users to seemlessly browse through recipes and ingredients."
-    },
-    {
-      name: "Bunder",
-      title: "Bunder - MVP Proposal",
-      pictures: [
-        {
-          img: require("./src/assets/designs/bunder/Moodboard.png"),
-          title: "Moodboard"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Mockup 1.png"),
-          title: "Mockup 1"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Mockup 2.png"),
-          title: "Mockup 2"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Mockup 3.png"),
-          title: "Mockup 3"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Market Research 1.png"),
-          title: "Market Research 1"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Market Research 2.png"),
-          title: "Market Research 2"
-        }
-      ],
-      technologies: ["XD", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "May, 2020 - July, 2020",
-      visit: "",
-      description:
-        "Bunder is an intuitive web platform for micro-communities to share sensitive data with privacy within the community and allow engagement amongst them. Our aim is two-fold - Co-existing and Collaboration. The former is executed by providing a platform for communities that are geographically positioned in the same proximity (Housing societies, Dorms, Apartment Complexes) to have and share data (exact apartment addresses, phone number, apartment housing rules, individuals tested positive for COVID-19) in an exclusive platform. The latter is to give these people in the community the ability to carry out a task you are physically or remotely unable to do; with dignity and ease."
-    }
   ],
   honor: [
     {
