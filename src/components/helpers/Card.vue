@@ -51,7 +51,7 @@
             v-if="portfolio.visit"
             @click.prevent="open(portfolio.visit)"
           >
-            visit website
+            website
           </button>
         </div>
       </div>
@@ -130,11 +130,10 @@ div.img-div {
   height: 460px;
 }
 
-.pcard:hover {
+/* .pcard:hover {
   transition: all 0.5s;
-  /* cursor: pointer; */
   box-shadow: 1px 1px 15px rgb(216, 216, 216);
-}
+} */
 
 .pcard-dark {
   border-radius: 7px;
@@ -145,11 +144,10 @@ div.img-div {
   height: 460px;
 }
 
-.pcard-dark:hover {
+/* .pcard-dark:hover {
   transition: all 0.5s;
-  /* cursor: pointer; */
   box-shadow: 1px 1px 12px rgb(53, 53, 53);
-}
+} */
 
 .pcard-body {
   border-top: 1px solid rgb(220, 220, 220);

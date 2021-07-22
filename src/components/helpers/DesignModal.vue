@@ -61,8 +61,36 @@
               >
             </div>
             <hr />
-            <div>
-              <Gallery :images="portfolio.pictures" :design="true" />
+            <Gallery :images="portfolio.pictures" :design="true" />
+
+            <div class="mt-3 pb-3 bheight">
+              <div class="title1 pb-2">問題陳述</div>
+              <div class="pb-2">{{ portfolio.problem }}</div>
+              <div>
+                <Gallery :images="portfolio.problemPic" :design="true" />
+              </div>
+            </div>
+            <div class="pb-3 bheight" v-if="portfolio.goal">
+              <div class="title1 pb-2">設計目標</div>
+              <div class="pb-2">{{ portfolio.goal }}</div>
+              <div>
+                <Gallery :images="portfolio.goalPic" :design="true" />
+              </div>
+            </div>
+            <br />
+            <div class="pb-3 bheight">
+              <div class="title1 pb-2">設計過程</div>
+              <div class="pb-2">{{ portfolio.process }}</div>
+              <div>
+                <Gallery :images="portfolio.processPic" :design="true" />
+              </div>
+            </div>
+            <div class="pb-3 bheight">
+              <div class="title1 pb-2">解決方案</div>
+              <div class="pb-2">{{ portfolio.solution }}</div>
+              <div>
+                <Gallery :images="portfolio.solutionPic" :design="true" />
+              </div>
             </div>
           </div>
 
@@ -71,6 +99,16 @@
               class="mt-1 mb-3"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
             />
+            <button class="btn w-25 mr-3" @click="open(portfolio.visit)">
+              video
+            </button>
+            <button
+              class="btn w-25 mr-3"
+              @click="open(portfolio.book)"
+              v-if="portfolio.book"
+            >
+              guidebook
+            </button>
             <button class="btn w-25" @click="$emit('close')">close</button>
           </div>
         </div>
@@ -154,8 +192,8 @@ a:hover {
 }
 
 .modal-container {
-  width: 40%;
-  max-height: 70%;
+  width: 80%;
+  max-height: 80%;
   margin: 0px auto;
   border-radius: 7px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);

@@ -35,7 +35,7 @@
           戴詩庭 Shih Ting, Tai<br />
           christine52jesus@gmail.com
         </div>
-
+<!-- 
         <button
           @click="
             open('https://www.facebook.com/profile.php?id=100001645107443')
@@ -47,7 +47,7 @@
           data-aos-offset="50"
         >
           Facebook
-        </button>
+        </button> -->
       </div>
     </div>
   </div>

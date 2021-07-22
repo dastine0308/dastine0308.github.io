@@ -38,7 +38,7 @@
               <div style="text-align: justify">
                 <span v-html="portfolio.description"></span>
               </div>
-              <br>
+              <br />
               <div class="mb-2">
                 <div class="title2">TIMELINE</div>
                 <div>{{ portfolio.date }}</div>
@@ -79,7 +79,11 @@
               class="mt-1 mb-3"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
             />
-            <button class="btn w-25 mr-3" @click="open(portfolio.github)">
+            <button
+              class="btn w-25 mr-3"
+              @click="open(portfolio.github)"
+              v-if="portfolio.github"
+            >
               github
             </button>
             <button class="btn w-25" @click="$emit('close')">close</button>

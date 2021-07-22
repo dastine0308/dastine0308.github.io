@@ -54,7 +54,7 @@ export default {
   },
   data() {
     return {
-      picture: info.flat_picture,
+      picture: info.award_picture,
       data: info.honor,
     };
   },

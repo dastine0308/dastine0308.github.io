@@ -109,9 +109,9 @@ export default {
   cursor: pointer;
   transition: all 0.5s;
 }
-.g-img:hover {
+/* .g-img:hover {
   opacity: 0.7;
-}
+} */
 
 /* The Modal (background) */
 .modal {
