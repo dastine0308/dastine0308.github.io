@@ -1,9 +1,9 @@
 <template>
-  <div style="overflow: auto;">
+  <div style="overflow: auto">
     <div class="prow">
       <div
-        class="pcolumn"
-        v-for="(i, idx) in images"
+        class="pcolumn mb-3"
+        v-for="i in images"
         :key="i.title"
         :class="{
           flex: design ? '100%' : '50%',
@@ -11,16 +11,17 @@
           'max-width': design ? '100%' : '50%',
         }"
       >
-        <img
-          :src="i.img"
-          style="width:100%"
-          :id="`gi${idx}`"
-          @click="showImg(idx)"
-          class="g-img"
-        />
         <div class="mt-1">
           <p style="font-weight: 500">{{ i.title }}</p>
         </div>
+        <img
+          :src="i.img"
+          style="width: 100%"
+          :id="`gi${i.id}`"
+          @click="showImg(i.id)"
+          class="g-img"
+        />
+        <p style="font-size: 14px; margin-top: 5px">{{ i.alt }}</p>
       </div>
     </div>
     <div id="myModal" class="modal">
@@ -48,16 +49,16 @@ export default {
     };
   },
   methods: {
-    showImg(idx) {
+    showImg(id) {
       var modal = document.getElementById("myModal");
-      var img = document.getElementById(`gi${idx}`);
+      var img = document.getElementById(`gi${id}`);
       var modalImg = document.getElementById("modalImg");
       modal.style.display = "block";
       modalImg.src = img.src;
 
       var span = document.getElementsByClassName("close")[0];
 
-      span.onclick = function() {
+      span.onclick = function () {
         modalImg.classList.add("closeModal");
         modal.classList.add("modalClose");
         setTimeout(() => {
@@ -82,7 +83,7 @@ export default {
 
 .pcolumn img {
   border-radius: 5px;
-  margin-top: 8px;
+  /* margin-top: 8px; */
   vertical-align: middle;
   width: 100%;
 }

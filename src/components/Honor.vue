@@ -10,7 +10,7 @@
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >Honor</span
+          >Honors</span
         >
       </div>
       <hr

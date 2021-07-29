@@ -19,16 +19,16 @@ Vue.use(VueParallaxJs)
 Vue.config.productionTip = false
 
 const routes = [
-  { path: '/'}
+  { path: '/' }
 ]
 
 const router = new VueRouter({
-  mode:'history',
+  mode: 'history',
   routes // short for `routes: routes`
 })
 
 new Vue({
-  created () {
+  created() {
     AOS.init()
   },
   router,

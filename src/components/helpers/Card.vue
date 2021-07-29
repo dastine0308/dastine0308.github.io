@@ -75,6 +75,8 @@ export default {
       window.open(url, "_blank");
     },
     showModal() {
+      // if (this.portfolio.lock) this.$emit("showLockModal", this.portfolio);
+      // else this.$emit("show", this.portfolio);
       this.$emit("show", this.portfolio);
     },
   },

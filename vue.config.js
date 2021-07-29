@@ -1,4 +1,4 @@
-const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV);
+// const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV);
 
 module.exports = {
     chainWebpack: config => {
@@ -7,7 +7,5 @@ module.exports = {
 
     outputDir: `dist/${process.env.NODE_ENV}`,
 
-    publicPath: IS_PROD
-        ? '/portfolio-web/'
-        : '/'
+    publicPath: '/'
 }

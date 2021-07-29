@@ -26,7 +26,7 @@
       />
 
       <vue-tabs :activeTextColor="!nightMode ? '#535A5E' : '#dfdfdf'">
-        <v-tab title="development">
+        <v-tab title="Development">
           <br />
           <div class="row">
             <div
@@ -34,7 +34,21 @@
               v-for="(portfolio, idx) in portfolio_info"
               :key="portfolio.name"
             >
-              <Card
+              <!-- <Card
+                :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }"
+                :portfolio="portfolio"
+                @show="showModalFn"
+                @showLockModal="showLockModalFn"
+                data-aos="fade-up"
+                :nightMode="nightMode"
+                data-aos-offset="100"
+                data-aos-delay="10"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+              /> -->
+            <Card
                 :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }"
                 :portfolio="portfolio"
                 @show="showModalFn"
@@ -54,7 +68,7 @@
           </div>
         </v-tab>
 
-        <v-tab title="design">
+        <v-tab title="Design">
           <div class="row">
             <div
               v-for="(design, idx) in desgin_info"
@@ -114,6 +128,16 @@
         </v-tab>
       </vue-tabs>
     </div>
+    <!-- <transition name="modal">
+      <LockModal
+        :showModal="showLockModal"
+        @close="closeModal"
+        v-if="showLockModal"
+        :portfolio="modal_info"
+        :nightMode="nightMode"
+        @show="showModalFn"
+      />
+    </transition> -->
     <transition name="modal">
       <Modal
         :showModal="showModal"
@@ -139,6 +163,7 @@
 import Card from "./helpers/Card";
 import Modal from "./helpers/Modal";
 import DesignModal from "./helpers/DesignModal";
+import LockModal from "./helpers/LockModal";
 import Carousel from "./helpers/Carousel";
 import info from "../../info";
 
@@ -158,6 +183,7 @@ export default {
     VueperSlides,
     VueperSlide,
     DesignModal,
+    LockModal,
   },
   props: {
     nightMode: {
@@ -171,6 +197,7 @@ export default {
       portfolio_info: [],
       showModal: false,
       showDesignModal: false,
+      // showLockModal: false,
       modal_info: {},
       design_modal_info: {},
       number: 3,
@@ -207,6 +234,7 @@ export default {
     closeModal() {
       this.showModal = false;
       this.showDesignModal = false;
+      // this.showLockModal = false;
       document.getElementsByTagName("body")[0].classList.remove("modal-open");
     },
     showModalFn(portfolio) {
@@ -217,6 +245,10 @@ export default {
       this.design_modal_info = design_portfolio;
       this.showDesignModal = true;
     },
+    // showLockModalFn(portfolio) {
+    //   this.modal_info = portfolio;
+    //   this.showLockModal = true;
+    // },
     showMore() {
       if (this.number != this.all_info.length) {
         this.number += 3;
@@ -379,10 +411,10 @@ export default {
   opacity: 1;
 }
 
-.tab >>>.vueperslide {
+.tab >>> .vueperslide {
   border-radius: 10px !important;
 }
-.tab >>>.vueperslides__parallax-wrapper {
+.tab >>> .vueperslides__parallax-wrapper {
   border-radius: 10px !important;
 }
 

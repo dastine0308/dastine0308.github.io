@@ -26,70 +26,64 @@
             />
           </div>
           <div class="modal-body my-0 pb-0 px-4 pt-0">
-            <div
+            <!-- <div
               class="mb-2 date"
               :class="{ 'text-light': nightMode, pbgray: nightMode }"
-            ></div>
+            ></div> -->
 
             <div style="text-align: justify">
               <span v-html="portfolio.description"></span>
             </div>
             <br />
-            <div class="mb-2">
-              <div class="title2">TIMELINE</div>
-              <div>{{ portfolio.date }}</div>
-            </div>
-            <div class="mb-2">
-              <div class="title2">CLIENT</div>
-              <div>{{ portfolio.client }}</div>
-            </div>
-            <div class="mb-2">
-              <div class="title2">ROLE</div>
-              <div>{{ portfolio.role }}</div>
-            </div>
-            <div class="mb-2">
-              <div class="title2">TEAM</div>
-              <div>{{ portfolio.team }}</div>
-            </div>
-            <div class="pb-1 bheight">
-              <span
-                class="badge mr-2 mb-2"
-                v-for="tech in portfolio.technologies"
-                :key="tech"
-                :class="{ 'bg-dark4': nightMode }"
-                >{{ tech }}</span
-              >
-            </div>
-            <hr />
-            <Gallery :images="portfolio.pictures" :design="true" />
 
-            <div class="mt-3 pb-3 bheight">
-              <div class="title1 pb-2">問題陳述</div>
-              <div class="pb-2">{{ portfolio.problem }}</div>
-              <div>
-                <Gallery :images="portfolio.problemPic" :design="true" />
+            <div class="row align-items-start justify-content-md-around">
+              <div class="mt-md-3 ml-3 ml-md-0 d-flex flex-column justify-content-center">
+                <div class="mb-2">
+                  <div class="title2">TIMELINE</div>
+                  <div>{{ portfolio.date }}</div>
+                </div>
+                <div class="mb-2">
+                  <div class="title2">CLIENT</div>
+                  <div>{{ portfolio.client }}</div>
+                </div>
+                <div class="mb-2">
+                  <div class="title2">ROLE</div>
+                  <div>{{ portfolio.role }}</div>
+                </div>
+                <div class="mb-2">
+                  <div class="title2">TEAM</div>
+                  <div>{{ portfolio.team }}</div>
+                </div>
+
+                <div class="pb-1 bheight">
+                  <span
+                    class="badge mr-2 mb-2"
+                    v-for="tech in portfolio.technologies"
+                    :key="tech"
+                    :class="{ 'bg-dark4': nightMode }"
+                    >{{ tech }}</span
+                  >
+                </div>
               </div>
+              <Gallery
+                class="col-xl-8 col-bg-8 col-md-8 col-sm-12 text-center"
+                :images="portfolio.pictures"
+                :design="true"
+              />
             </div>
-            <div class="pb-3 bheight" v-if="portfolio.goal">
-              <div class="title1 pb-2">設計目標</div>
-              <div class="pb-2">{{ portfolio.goal }}</div>
+
+            <hr />
+
+            <div
+              class="mb-5 bheight"
+              v-for="(item, idx) in portfolio.content"
+              :key="idx"
+            >
+              <div class="title1 pb-2">{{ item.subtitle }}</div>
+              <div class="title3 pb-4">{{ item.description }}</div>
+
               <div>
-                <Gallery :images="portfolio.goalPic" :design="true" />
-              </div>
-            </div>
-            <br />
-            <div class="pb-3 bheight">
-              <div class="title1 pb-2">設計過程</div>
-              <div class="pb-2">{{ portfolio.process }}</div>
-              <div>
-                <Gallery :images="portfolio.processPic" :design="true" />
-              </div>
-            </div>
-            <div class="pb-3 bheight">
-              <div class="title1 pb-2">解決方案</div>
-              <div class="pb-2">{{ portfolio.solution }}</div>
-              <div>
-                <Gallery :images="portfolio.solutionPic" :design="true" />
+                <Gallery :images="item.pictures" :design="true" />
               </div>
             </div>
           </div>
@@ -99,7 +93,10 @@
               class="mt-1 mb-3"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
             />
-            <button class="btn w-25 mr-3" @click="open(portfolio.visit)">
+            <button class="btn w-25 mr-3" @click="open(portfolio.visit)" v-if="portfolio.visit">
+              prototype
+            </button>
+             <button class="btn w-25 mr-3" @click="open(portfolio.video)" v-if="portfolio.video">
               video
             </button>
             <button
@@ -109,7 +106,7 @@
             >
               guidebook
             </button>
-            <button class="btn w-25" @click="$emit('close')">close</button>
+            <!-- <button class="btn w-25" @click="$emit('close')">close</button> -->
           </div>
         </div>
       </div>
@@ -256,7 +253,7 @@ a:hover {
 
 .title3 {
   font-size: 16px;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 .badge {

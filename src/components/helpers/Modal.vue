@@ -39,41 +39,62 @@
                 <span v-html="portfolio.description"></span>
               </div>
               <br />
-              <div class="mb-2">
-                <div class="title2">TIMELINE</div>
-                <div>{{ portfolio.date }}</div>
-              </div>
-              <div class="mb-2">
-                <div class="title2">CLIENT</div>
-                <div>{{ portfolio.client }}</div>
-              </div>
-              <div class="mb-2">
-                <div class="title2">ROLE</div>
-                <div>{{ portfolio.role }}</div>
-              </div>
-              <div class="mb-2">
-                <div class="title2">TEAM</div>
-                <div>{{ portfolio.team }}</div>
-              </div>
-              <!-- <div>{{ portfolio.date }} • {{ portfolio.category }}</div> -->
-            </div>
 
-            <div class="pb-1 bheight">
-              <span
-                class="badge mr-2 mb-2"
-                v-for="tech in portfolio.technologies"
-                :key="tech"
-                :class="{ 'bg-dark4': nightMode }"
-                >{{ tech }}</span
-              >
+              <div class="row align-items-start justify-content-md-around">
+                <div
+                  class="
+                    mt-md-3
+                    ml-3 ml-md-0
+                    d-flex
+                    flex-column
+                    justify-content-center
+                  "
+                >
+                  <div class="mb-2">
+                    <div class="title2">TIMELINE</div>
+                    <div>{{ portfolio.date }}</div>
+                  </div>
+                  <div class="mb-2">
+                    <div class="title2">CLIENT</div>
+                    <div>{{ portfolio.client }}</div>
+                  </div>
+                  <div class="mb-2">
+                    <div class="title2">ROLE</div>
+                    <div>{{ portfolio.role }}</div>
+                  </div>
+                  <div class="mb-2">
+                    <div class="title2">TEAM</div>
+                    <div>{{ portfolio.team }}</div>
+                  </div>
+
+                  <div class="pb-1 bheight">
+                    <span
+                      class="badge mr-2 mb-2"
+                      v-for="tech in portfolio.technologies"
+                      :key="tech"
+                      :class="{ 'bg-dark4': nightMode }"
+                      >{{ tech }}</span
+                    >
+                  </div>
+                </div>
+                <Gallery
+                  class="col-xl-8 col-bg-8 col-md-8 col-sm-12 text-center"
+                  :images="portfolio.pictures"
+                />
+              </div>
             </div>
 
             <hr />
-            <div>
-              <Gallery :images="portfolio.pictures" />
+            <div
+              class="mb-5 bheight"
+              v-for="(item, idx) in portfolio.content"
+              :key="idx"
+            >
+              <div class="title1 pb-2">{{ item.subtitle }}</div>
+              <span v-html="item.description"></span>
+              <Gallery class="mt-2" :images="item.pictures" />
             </div>
           </div>
-
           <div class="text-center pb-3">
             <hr
               class="mt-1 mb-3"
@@ -86,7 +107,6 @@
             >
               github
             </button>
-            <button class="btn w-25" @click="$emit('close')">close</button>
           </div>
         </div>
       </div>
@@ -105,7 +125,7 @@ export default {
     Gallery,
   },
   props: {
-    showModal: {
+    showLockModal: {
       type: Boolean,
     },
     portfolio: {
@@ -267,4 +287,5 @@ a:hover {
 .bg-dark4 {
   background-color: #494e55 !important;
 }
+
 </style>
