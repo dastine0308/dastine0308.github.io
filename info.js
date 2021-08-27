@@ -16,7 +16,7 @@ let info = {
     linkedin: "https://www.linkedin.com/in/dastine/",
     github: "https://github.com/dastine0308?tab=repositories",
     issue: "https://issuu.com/christine52jesus/docs/dastine_porfolio_3",
-    resume: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/21722cf3-dfd3-41f6-b101-c0f460cf828c/2021CV.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210726T094437Z&X-Amz-Expires=86400&X-Amz-Signature=b3ff36cdab4567c533ec26856e37337b044ef2971bffe8d5c5a62a537dedcc5e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%222021CV.pdf%22"
+    resume: "https://drive.google.com/file/d/1aetRxzsVg5J4MD1SnK0kblUNPTqvCzLm/view?usp=sharing"
     // "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
   },
   education: [
