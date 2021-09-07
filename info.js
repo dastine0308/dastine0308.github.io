@@ -14,7 +14,7 @@ let info = {
   // "A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ",
   links: {
     linkedin: "https://www.linkedin.com/in/dastine/",
-    github: "https://github.com/dastine0308?tab=repositories",
+    github: "https://github.com/dastine0308",
     issue: "https://issuu.com/christine52jesus/docs/dastine_porfolio_3",
     resume: "https://pda.104.com.tw/profile/preview?vno=75ruob771"
     // "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
@@ -26,7 +26,7 @@ let info = {
       date: "2017/9 - 2021/6",
       degree: "學士, 資訊傳播學系",
       // gpa: "3.7/4.0",
-      description: " ",
+      description: "相關課程：行動裝置視覺介面設計, 網頁程式設計, 網際網路程式設計, 資料結構, 人機互動, 3D建模 ",
       // "Currently pursuing my Master's in Computer Science, while specializing in the field of Artificial Intelligence and Machine Learning.",
       skills: [
         "UI/UX",
@@ -41,11 +41,20 @@ let info = {
     {
       name: "富邦人壽股份有限公司",
       place: "台北市 內湖區",
-      date: "2020/7 - 目前",
+      date: "2020/7 - 2021/8",
       position: "前端工程師實習生",
-      description: "負責專案前端開發，與後端串接API、協助專案除錯及修正",
+      description: "• 協助設計師測試 UX 工具, 以提升使用者體驗</br>• 參與多個大型專案的前端開發, 與後端串接 API, 並協助專案除錯及修正</br>• 舉辦 8 場分享會, 研究及分享前端相關知識",
       // "Worked as a Software Developer for the Human BioMolecular Atlas Program (funded by the NIH), building innovative visualization tools to envision large biomedical datasets.",
       skills: ["HTML", "SASS(CSS)", "JQuery", "JavaScript(ES6)", "VueJS", "Git", "AJAX Api", "Typescript"]
+    },
+    {
+      name: "MasterCorp",
+      place: "Massachuset, USA",
+      date: "2019/6 - 2019/9",
+      position: "Housekeeping (J1 Work and Travel students)",
+      description: "• Employers of J1 Work&Travel students <br/>• Self-initiated and applied for this 3-month Work&Travel summer scheme in US MA. <br/>• Responsible for managing units under MasterCorp’s standard and got promoted as supervisor.",
+      // "Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.",
+      // skills: [""]
     },
     {
       name: "元智大學資訊傳播學系實驗室 ",
@@ -53,27 +62,18 @@ let info = {
       date: "2018/9 - 2019/6",
       position: "計畫研究助理",
       description:
-        "研究 MogoDB 資料庫及 Laravel 系統安裝測試、撰寫結案報告書、負責實驗室行政工作。",
+        "• 架設物聯網監控平台及測試 Laravel 系統 <br/>• 協助教授安排工作坊課程, 訓練約 50 位同學",
       skills: ["HTML5", "CSS", "Git", "MongoDB", "PHP"]
     },
-    {
-      name: "MasterCorp",
-      place: "Massachuset, USA",
-      date: "2019/6 - 2019/9",
-      position: "Housekeeping (J1 Work and Travel students)",
-      description: "Employers of J1 Work and Travel students.Having the initiative to organise working and travel in a foreign country.  Responsible for maintaining cleanliness and appearance of guest units following MasterCorp’s standard   cleaning process. Got promted by hard-working to supervise other housekeepers.",
-      // "Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.",
-      // skills: [""]
-    },
-    {
-      name: "昱強補習班-愛美語元生分校",
-      place: "桃園市 中壢區",
-      date: "2018/9 - 2019/5",
-      position: "國中數理輔導老師(兼職)",
-      description: "個別輔導學生數理相關問題、配合補習班教材講解題目、掌握班上學生學習狀況。",
-      // "Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.",
-      skills: ["數學", "理化"]
-    },
+    // {
+    //   name: "昱強補習班-愛美語元生分校",
+    //   place: "桃園市 中壢區",
+    //   date: "2018/9 - 2019/5",
+    //   position: "國中數理輔導老師(兼職)",
+    //   description: "個別輔導學生數理相關問題、配合補習班教材講解題目、掌握班上學生學習狀況。",
+    //   // "Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.",
+    //   skills: ["數學", "理化"]
+    // },
 
   ],
   skills: [
