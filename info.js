@@ -10,7 +10,7 @@ let info = {
     }
   },
   description:
-    "<br>能接受失敗，從中學習並調整<br><br>我個性活潑開朗，主動積極，對於事物保有好奇心，高中加入大眾傳播社，接觸攝影，從中培養我對視覺的敏感度，用影像的細膩與真實作為溝通的媒介，每次構圖前養成觀察「人」的習慣，使我更能同理鏡中人物的情緒與情境，用畫面傳達當下的感動。大學就讀資訊傳播學系，接觸前衛的電子媒介，像是3D建模、動畫、網頁前端、後端程式..等，使我能與不同領域的人溝通與合作，因著學習力與適應力強，對事情和觀點都保有彈性。 ",
+    "<br>我對於事物保有好奇心, 喜歡探究新知識, 並以科技的方式驗證腦中的想法。擁有研究、設計和開發的經驗，曾在富邦人壽擔任一年的前端工程師實習生, 從設計到前端開發的過程中, 能夠與設計師共同合作尋求最佳的方案, 同時, 因著學習力及適應力強, 能夠快速融入在多人團隊下的協作專案。 ",
   // "A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ",
   links: {
     linkedin: "https://www.linkedin.com/in/dastine/",
@@ -46,15 +46,6 @@ let info = {
       description: "• 協助設計師測試 UX 工具, 以提升使用者體驗</br>• 參與多個大型專案的前端開發, 與後端串接 API, 並協助專案除錯及修正</br>• 舉辦 8 場分享會, 研究及分享前端相關知識",
       // "Worked as a Software Developer for the Human BioMolecular Atlas Program (funded by the NIH), building innovative visualization tools to envision large biomedical datasets.",
       skills: ["HTML", "SASS(CSS)", "jQuery", "JavaScript(ES6)", "Vue.js", "Git", "AJAX Api", "Typescript"]
-    },
-    {
-      name: "MasterCorp",
-      place: "Massachuset, USA",
-      date: "2019/6 - 2019/9",
-      position: "Hotel (J1 Work and Travel students)",
-      description: "Employers of J1 Work&Travel students. Self-initiated and applied for this 3-month Work&Travel summer scheme in US MA. Responsible for managing units under MasterCorp’s standard and got promoted as supervisor.",
-      // "Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.",
-      // skills: [""]
     },
     {
       name: "MasterCorp",
