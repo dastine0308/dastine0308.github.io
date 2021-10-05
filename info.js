@@ -102,6 +102,39 @@ let info = {
   ],
   portfolio: [
     {
+      name: "期許測試工具 微軟產品反應卡",
+      pictures: [
+        {
+          id: "mrc1",
+          img: require("./src/assets/portfolio/mrc/mrc1.jpg")
+        },
+      ],
+      technologies: ["SCSS", "jQuery", "JavaScript", "Vue.js"],
+      category: "Front-end development",
+      date: "2020/10 - 2020/12",
+      client: "用戶體驗研究團隊",
+      role: "前端開發者",
+      team: "3 位成員",
+      github:
+        "https://github.com/dastine0308/uxtools_reactionCards",
+      visit: "https://dastine0308.github.io/uxtools_reactionCards/",
+      description:
+        "微軟產品反應卡是由微軟公司研發用來做「合宜性」測試的工具，可以引導使用者表達並解釋他們對某設計的感覺，適合在產品的原型階段使用，作為未來改版的基準。<br>與 UI 設計師合作，開發網頁版，便於受試者在行動裝置上進行，解決原先紙本索引卡的費工與不便利性。",
+      content: [
+        {
+          subtitle: "用戶使用情境",
+          description: "",
+          pictures: [
+            {
+              id: "mrc2",
+              title: "RWD 響應式",
+              img: require("./src/assets/portfolio/mrc/mrc.jpg")
+            },
+          ]
+        },
+      ],
+    },
+    {
       name: "線上畢業展覽 - 此刻變態",
       pictures: [
         {
@@ -117,7 +150,7 @@ let info = {
       team: "4 位成員",
       github:
         "https://github.com/dastine0308/yzuic-exhibition-web",
-      visit: "http://befrenetic.infocom.yzu.edu.tw/?fbclid=IwAR3YWtO2ckQ1nkFbfjpJ5zZwf66AqIMDt9bKcXx2erc2uGk_nR2q_Zqecbs#/",
+      // visit: "http://befrenetic.infocom.yzu.edu.tw/?fbclid=IwAR3YWtO2ckQ1nkFbfjpJ5zZwf66AqIMDt9bKcXx2erc2uGk_nR2q_Zqecbs#/",
       description:
         "此為元智大學資訊傳播學系 24 屆畢業展覽網站，包含策展理念、策展團隊與各組畢業製作的介紹。負責 UI 切版，並在移動裝置上具有響應性。",
       content: [
@@ -130,6 +163,27 @@ let info = {
               title: "Sitemap",
               img: require("./src/assets/portfolio/gew/site-map.png"),
               alt: "註：粉色框線的區域為參與開發的頁面。",
+            },
+          ]
+        },
+        {
+          subtitle: "開發頁面",
+          description: "",
+          pictures: [
+            {
+              id: "gew3",
+              title: "展覽作品",
+              img: require("./src/assets/portfolio/gew/exhibition.png"),
+            },
+            {
+              id: "gew4",
+              title: "依作品類別 - 互動",
+              img: require("./src/assets/portfolio/gew/worksGrid.png"),
+            },
+            {
+              id: "gew5",
+              title: "內頁（介紹頁） - 宮夜隔命",
+              img: require("./src/assets/portfolio/gew/exhibitionIntro.png"),
             },
           ]
         },
@@ -282,39 +336,6 @@ let info = {
               id: "aml4",
               title: "新增 AML 審查案件 - 覆核彈窗",
               img: require("./src/assets/portfolio/AML/text-area.png")
-            },
-          ]
-        },
-      ],
-    },
-    {
-      name: "期許測試工具 微軟產品反應卡",
-      pictures: [
-        {
-          id: "mrc1",
-          img: require("./src/assets/portfolio/mrc/mrc1.jpg")
-        },
-      ],
-      technologies: ["SCSS", "jQuery", "JavaScript", "Vue.js"],
-      category: "Front-end development",
-      date: "2020/10 - 2020/12",
-      client: "用戶體驗研究團隊",
-      role: "前端開發者",
-      team: "3 位成員",
-      github:
-        "https://github.com/dastine0308/uxtools_reactionCards",
-      visit: "https://dastine0308.github.io/uxtools_reactionCards/",
-      description:
-        "微軟產品反應卡是由微軟公司研發用來做「合宜性」測試的工具，可以引導使用者表達並解釋他們對某設計的感覺，適合在產品的原型階段使用，作為未來改版的基準。<br>與 UI 設計師合作，開發網頁版，便於受試者在行動裝置上進行，解決原先紙本索引卡的費工與不便利性。",
-      content: [
-        {
-          subtitle: "用戶使用情境",
-          description: "",
-          pictures: [
-            {
-              id: "mrc2",
-              title: "RWD 響應式",
-              img: require("./src/assets/portfolio/mrc/mrc.jpg")
             },
           ]
         },
