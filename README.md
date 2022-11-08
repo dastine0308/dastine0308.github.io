@@ -1,7 +1,2 @@
-# Dastine Portfolio
-
-* Demo
+# Portfolio 線上作品集
 https://dastine0308.github.io/
-
-* 打包指令
-```sh ./deploy.sh```
